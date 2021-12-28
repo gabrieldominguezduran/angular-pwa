@@ -1,1 +1,35 @@
-<a [routerLink]="['/']">Back Link</a>
+<div class="container" fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="70%">
+  <mat-card class="mat-elevation-z4">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Dogs</mat-card-title>
+      <mat-card-subtitle>Dachshund </mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="{{ image[0] }}" alt="Photo of a Dachshund" />
+    <mat-card-content>
+      <mat-accordion>
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              {{ panelOpenState ? "Hide" : "Show" }} description
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p>
+            A typical dachshund is long-bodied and muscular with short stubby
+            legs. Its front paws are disproportionately large, being
+            paddle-shaped and particularly suitable for digging. Its skin is
+            loose enough not to tear while tunneling in tight burrows to chase
+            prey. The dachshund has a deep chest which provides plenty of space
+            for heart development and lung capacity. Its snout is long.
+          </p>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </mat-card-content>
+  </mat-card>
+  <button mat-raised-button color="warn" class="link">
+    <a [routerLink]="['/']">Back</a>
+  </button>
+</div>

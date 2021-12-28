@@ -5,7 +5,7 @@ import { ComponentListComponent } from './components/component-list/component-li
 
 const routes: Routes = [
   { path: '', component: ComponentListComponent },
-  { path: 'detail/:id', component: ComponentDetailComponent },
+  { path: 'detail/random', component: ComponentDetailComponent },
   { path: '**', component: ComponentListComponent },
 ];
 

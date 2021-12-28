@@ -10,7 +10,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 
 import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatExpansionModule } from '@angular/material/expansion';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,15 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     HttpClientModule,
     BrowserAnimationsModule,
     MatCardModule,
+    MatExpansionModule,
+    MatButtonModule,
     FlexLayoutModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the app is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent],

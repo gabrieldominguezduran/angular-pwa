@@ -1,0 +1,26 @@
+.container-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.example-header-image {
+  background-image: url("https://images.dog.ceo/breeds/dachshund/dachshund-7.jpg");
+  background-size: cover;
+}
+
+.mat-card {
+  margin: 2rem 0;
+}
+
+.link {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}

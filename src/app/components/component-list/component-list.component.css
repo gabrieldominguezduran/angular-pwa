@@ -1,0 +1,19 @@
+.content {
+  padding: 16px;
+}
+
+.content > mat-card {
+  width: 200px;
+}
+
+.example-header-image {
+  background-image: url("https://images.dog.ceo/breeds/dachshund/dachshund-7.jpg");
+  background-size: cover;
+}
+
+a:link {
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
