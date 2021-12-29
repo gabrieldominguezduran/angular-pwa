@@ -26,5 +26,20 @@
         ]
       }
     }
+  ],
+  "dataGroups": [
+    {
+      "name": "dogs-api",
+      "urls": [
+        "https://dog.ceo/api/breed/dachshund/images",
+        "https://dog.ceo/api/breed/dachshund/images/random"
+      ],
+      "cacheConfig": {
+        "maxSize": 28,
+        "maxAge": "1h",
+        "timeout": "1s",
+        "strategy": "freshness"
+      }
+    }
   ]
 }

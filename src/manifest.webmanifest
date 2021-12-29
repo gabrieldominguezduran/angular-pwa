@@ -1,7 +1,7 @@
 {
-  "name": "angular-pwa",
-  "short_name": "angular-pwa",
-  "theme_color": "#1976d2",
+  "name": "Dachshund",
+  "short_name": "Dachshund",
+  "theme_color": "#F8D9C4",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "./",
